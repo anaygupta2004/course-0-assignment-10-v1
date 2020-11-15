@@ -18,7 +18,7 @@ struct Purchase {
 };
 
 struct Budget {
-    unsigned int category;    // A category as described above.
+    int category;    // A category as described above.
     int limit;                // The maximum amount available for the specified category.
 };
 
@@ -51,10 +51,10 @@ Budget FromUser() {
 
 
 Purchase FromUser() {
-Purchase item;
-    cin << item.category;
-cin << item.limit;
-    return item;
+  Purchase item;
+  cin << item.category;
+  cin << item.limit;
+  return item;
 }
 
 
